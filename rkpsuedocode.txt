@@ -1,0 +1,30 @@
+This is the pseudo code for the Record-keeper program. This program receives messages of type my_msg_st struct and creates a database record of all the fields for an employee using the database struct. 
+
+int main(){
+
+//initialization code
+
+//recordkeeper links to the message queue
+
+while(running){
+	record-keeper receives message from message queue when message is available
+	if(message == check) searches company linked list for  databases  with the department name entered and prints out employees with corresponding department name if number present //doesnt print anything out when not present
+
+	if(message == delete) searches company linked list for databases with employee number entered and deletes corresponding databases then prints a 0 when a database is successfully deleted and -1 otherwise
+	
+	if(message == check_employee_number) searches company linked list for databases with the database name entered and prints out corresponding employee numbers //does not print out anything when name not found
+	
+	if(message == check_salary) searches company linked list for databases with the employee number entered and prints out the corresponding employee salaries //does not print out anything when number not found
+
+	if(message == check_department) searches company linked list for databases with the employee number and prints out the corresponding employee department //does not print out anything when number not found
+
+	if(message == check_name) searches company linked list for databases with the employee number and prints out the corresponding employee name //does not print out anything when number not found	
+	
+	if(message == insert) reads the message queue for the entered database name, department number, department name, employee number and salary. When database struct has been completely made, it then connects the new database entry to the company linked list. 
+
+	if(message == end) sets running to 0 so the while loop stops
+}
+deletes the message queue and closes the program. 
+
+
+}

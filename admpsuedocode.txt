@@ -1,0 +1,35 @@
+This is the pseudo code for the Administrator program which serves as the input interface for the user. It sends messages of type my_msg_st struct through the message queue to the recordkeeper(server).
+
+int main(){
+
+//initialization code
+message queue initialization
+
+while(running){
+
+	asks the user for a command
+
+	if(command == End) sends "End" to the server(record-keeper) then sets running = 0 to stop the lo
+
+	else if(command == Insert) sends inset to serve collects employee name, department, salary and employees number
+
+	else if(command == Check_name) sends "check_name" to the server, then asks the user to enter the employee number to be used in the search for the name
+
+	else if(command == Check_department) sends "check_department" to the server, then asks the user to enter the employee number to be used in search for the deparment name
+
+	else if(command == Check_salary) sends "check_salary" to the server, then asks the user to enter the employee number to be used in search for the salary
+
+	else if(command == Check_employee_number) sends "check_employee_number" to the server, then asks the user to enter the name to be used in the search for the employee number
+
+	else if(command == Check) sends "check " to the server, then asks the user for the department name to be used in search for all employee number
+
+	else if(command == Delete) sends "delete" to the server, then asks the user for the employee number to be used in search for database employee(s) to be deleted
+	
+	else asks the user to re-enter a valid command if input is not recognized. 
+
+
+}
+exits the program.
+
+
+}
